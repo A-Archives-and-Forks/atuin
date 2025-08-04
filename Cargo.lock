@@ -221,7 +221,7 @@ checksum = "1505bd5d3d116872e7271a6d4e16d81d0c8570876c8de68093a09ac269d8aac0"
 
 [[package]]
 name = "atuin"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "arboard",
  "async-trait",
@@ -249,6 +249,7 @@ dependencies = [
  "interim",
  "itertools 0.13.0",
  "log",
+ "norm",
  "ratatui",
  "regex",
  "rpassword",
@@ -272,7 +273,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-client"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "async-trait",
  "atuin-common",
@@ -327,7 +328,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-common"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "base64 0.22.1",
  "directories",
@@ -347,7 +348,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-daemon"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "atuin-client",
  "atuin-dotfiles",
@@ -374,7 +375,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-dotfiles"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "atuin-client",
  "atuin-common",
@@ -388,7 +389,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-history"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "atuin-client",
  "crossterm",
@@ -401,7 +402,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-kv"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "atuin-client",
  "atuin-common",
@@ -417,7 +418,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-scripts"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "atuin-client",
  "atuin-common",
@@ -439,7 +440,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-server"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "argon2",
  "async-trait",
@@ -468,7 +469,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-server-database"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "async-trait",
  "atuin-common",
@@ -481,7 +482,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-server-postgres"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "async-trait",
  "atuin-common",
@@ -499,7 +500,7 @@ dependencies = [
 
 [[package]]
 name = "atuin-server-sqlite"
-version = "18.7.1"
+version = "18.8.0"
 dependencies = [
  "async-trait",
  "atuin-common",
@@ -2652,6 +2653,15 @@ name = "nom"
 version = "8.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "df9761775871bdef83bee530e60050f7e54b1105350d6884eb0fb4f46c2f9405"
+dependencies = [
+ "memchr",
+]
+
+[[package]]
+name = "norm"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed5725a3379c44dc0adf3437af87cf21c10df473ed858d654b12603dea102508"
 dependencies = [
  "memchr",
 ]
